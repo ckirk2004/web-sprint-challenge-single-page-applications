@@ -10,7 +10,7 @@ const NavBar = styled.div`
     text-align: center;
 `;
 
-export const NavLink = styled.a`
+const NavLink = styled.a`
     color: #ffffff;
     font-weight: 500;
     text-decoration: none;
@@ -25,6 +25,7 @@ export const NavLink = styled.a`
         &:hover {
             background-color: white;
             color: #811818;
+            text-decoration: none;
         };
 
 `;

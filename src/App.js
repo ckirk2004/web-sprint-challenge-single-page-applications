@@ -1,13 +1,15 @@
 import React from "react";
 import styled from 'styled-components';
 import Navigation from './Navigation.js';
+import Headline from './Jumbotron';
+import FoodCard from './Card';
 
 //Styles
 
 const Header = styled.div`
   display: flex;
   justify-content: space-between;
-  margin: 0 3rem;
+  margin: 2rem;
 `;
 
 const Logo = styled.h1`
@@ -22,6 +24,8 @@ const App = () => {
         <Logo>Lambda Eats</Logo>
         <Navigation />
       </Header>
+      <Headline />
+      <FoodCard />
     </>
   );
 };

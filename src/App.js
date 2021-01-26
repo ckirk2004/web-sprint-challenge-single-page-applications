@@ -1,32 +1,26 @@
 import React from "react";
-import styled from 'styled-components';
-import Navigation from './Navigation.js';
-import Headline from './Jumbotron';
-import FoodCard from './Card';
-
-//Styles
-
-const Header = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin: 2rem;
-`;
-
-const Logo = styled.h1`
-  color: #B22222;
-`;
-
+import OrderPizza from './OrderPizza';
+import Homepage from './Homepage';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 const App = () => {
   return (
-    <>
-      <Header>
-        <Logo>Lambda Eats</Logo>
-        <Navigation />
-      </Header>
-      <Headline />
-      <FoodCard />
-    </>
+    <Router>
+      <Route
+        exact
+        path="/"
+        render={() => {
+          return <Homepage />;
+        }}
+        />
+
+      <Route 
+        path='/pizza'
+        render={() => {
+          return <OrderPizza />
+        }}
+        />
+    </Router>
   );
 };
 export default App;

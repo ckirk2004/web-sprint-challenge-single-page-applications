@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     Card, CardText, CardBody,
-    CardTitle, CardSubtitle, CardGroup, CardDeck, Button
+    CardTitle, CardSubtitle, CardDeck, Button
   } from 'reactstrap';
 
   const FoodCard = () => {
